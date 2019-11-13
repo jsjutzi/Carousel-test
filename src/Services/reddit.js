@@ -14,7 +14,6 @@ export const fetchMasterPosts = async() => {
 }
 
 export const fetchDetailPosts = async(id) => {
-    id = 'dv7tvt'
     const response = await fetch('https://www.reddit.com/r/apple/comments/dv7tvt/dear_apple.json')
     let data = await response.json();
     const originalPosts = [];
